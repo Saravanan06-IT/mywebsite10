@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V2V Networks | Connected Future</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        v2v: {
+                            dark: '#0B1120',
+                            panel: '#1E293B',
+                            accent: '#00F3FF',
+                            text: '#F8FAFC',
+                            muted: '#94A3B8'
+                        }
+                    },
+                    boxShadow: {
+                        'glow': '0 0 15px rgba(0, 243, 255, 0.5)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .bg-hero {
+            background: linear-gradient(to bottom, rgba(11, 17, 32, 0.7), rgba(11, 17, 32, 1)), 
+                        url('https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;
+        }
+        .bg-vision {
+            background: linear-gradient(to bottom, rgba(234, 88, 12, 0.4), rgba(11, 17, 32, 0.9)), 
+                        url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=2144&auto=format&fit=crop') center/cover fixed;
+        }
+        /* Nav link transition smoothing */
+        nav a { transition: all 0.3s ease; border-bottom: 2px solid transparent; padding-bottom: 4px; }
+    </style>
+</head>
+<body class="bg-v2v-dark text-v2v-text font-sans antialiased overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-v2v-dark/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full border-2 border-v2v-accent flex items-center justify-center shadow-glow">
+                    <div class="w-2 h-2 bg-v2v-accent rounded-full"></div>
+                </div>
+                <span class="text-xl font-bold tracking-wider">V2V NETWORKS</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-v2v-muted">
+                <a href="#home" class="nav-link hover:text-v2v-accent">HOME</a>
+                <a href="#solutions" class="nav-link hover:text-v2v-accent">SOLUTIONS</a>
+                <a href="#analytics" class="nav-link hover:text-v2v-accent">SAFETY & ANALYTICS</a>
+                <a href="#vision" class="nav-link hover:text-v2v-accent">VISION</a>
+                <a href="#contact" class="nav-link hover:text-v2v-accent">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative h-screen bg-hero flex items-center justify-center text-center px-4 pt-20">
+        <div class="z-10 max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white to-v2v-accent drop-shadow-[0_0_15px_rgba(0,243,255,0.8)]">
+                CONNECTED FUTURE
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-light">
+                Revolutionizing roadways with advanced V2V communication. Real-time data for a safer, more efficient tomorrow.
+            </p>
+            <a href="#solutions" class="inline-block px-8 py-4 border-2 border-v2v-accent text-v2v-accent font-bold rounded-full hover:bg-v2v-accent hover:text-v2v-dark transition-all duration-300 shadow-glow uppercase tracking-wide">
+                Discover V2V Solutions
+            </a>
+        </div>
+    </section>
+
+    <section id="solutions" class="py-24 bg-v2v-panel text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">Core Technology Stack</h2>
+                <p class="text-v2v-muted max-w-2xl mx-auto">Our infrastructure is built for high-frequency data streaming, integrating real-time telemetry with cloud-based predictive analytics to manage intersection safety autonomously.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-v2v-dark p-8 rounded-xl border border-white/10 hover:border-v2v-accent/50 transition-colors">
+                    <h3 class="text-xl font-bold text-v2v-accent mb-3">AI-Driven Dashboards</h3>
+                    <p class="text-v2v-muted text-sm">Visualize traffic patterns and potential hazards with custom React-based administrative interfaces powered by real-time WebSockets.</p>
+                </div>
+                <div class="bg-v2v-dark p-8 rounded-xl border border-white/10 hover:border-v2v-accent/50 transition-colors">
+                    <h3 class="text-xl font-bold text-v2v-accent mb-3">Containerized Edge Nodes</h3>
+                    <p class="text-v2v-muted text-sm">Deploy intersection management systems in isolated Docker environments ensuring scalability and consistent zero-trust network security.</p>
+                </div>
+                <div class="bg-v2v-dark p-8 rounded-xl border border-white/10 hover:border-v2v-accent/50 transition-colors">
+                    <h3 class="text-xl font-bold text-v2v-accent mb-3">Predictive Processing</h3>
+                    <p class="text-v2v-muted text-sm">Backend algorithms leverage Python and PostgreSQL to analyze high-speed telemetry, dynamically preventing vehicle collisions before they occur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="analytics" class="py-24 bg-gray-100 text-gray-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-10">
+                <h2 class="text-3xl font-bold text-gray-800">Safety & Analytics</h2>
+                <div class="h-1 w-20 bg-v2v-accent mt-2"></div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-1 flex flex-col gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                        <h3 class="font-bold text-gray-700 mb-4 uppercase text-sm">System Latency (ms)</h3>
+                        <div class="h-48 bg-slate-50 rounded border border-dashed border-gray-300 flex items-center justify-center text-gray-400 text-sm">
+                            [ Telemetry Graph ]
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200">
+                            <div class="text-xs text-gray-500 uppercase font-semibold">Active Nodes</div>
+                            <div class="text-3xl font-bold text-v2v-dark mt-2">2,145</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200">
+                            <div class="text-xs text-gray-500 uppercase font-semibold">Network Health</div>
+                            <div class="text-3xl font-bold text-emerald-500 mt-2">99.8%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-2 bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden flex flex-col">
+                    <div class="px-6 py-4 border-b border-gray-100 flex justify-between items-center">
+                        <h3 class="font-bold text-gray-700 uppercase text-sm">V2V Virtual Sensor Map</h3>
+                        <span class="flex items-center gap-2 text-xs font-semibold text-emerald-500 bg-emerald-50 px-3 py-1 rounded-full">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> LIVE
+                        </span>
+                    </div>
+                    <div class="flex-1 bg-v2v-dark relative min-h-[500px]">
+                        <div class="absolute inset-0 flex items-center justify-center text-v2v-accent/50 border-4 border-dashed border-v2v-accent/20 m-4 rounded text-center px-4">
+                            [ Integrate previous AI Monitoring Canvas Here ]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vision" class="relative py-32 bg-vision text-center text-white">
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <h2 class="text-4xl md:text-6xl font-serif mb-8 text-shadow-lg">OUR VISION</h2>
+        </div>
+    </section>
+    <div class="py-20 bg-white text-center text-gray-800">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-3xl font-serif mb-6">INTEGRATING DATA FOR A MORE RESPONSIVE WORLD.</h2>
+            <div class="flex flex-col md:flex-row gap-8 text-left mb-10 text-gray-600">
+                <p class="flex-1">We're weaving a continuous digital fabric connecting infrastructure, mobility, and community to ensure seamless vehicle safety management on every road.</p>
+                <p class="flex-1">Discover how our integrated approach is shaping smarter, safer, and more inclusive cities by predicting and resolving traffic conflicts before they occur.</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="py-24 bg-v2v-dark text-white border-t border-white/10">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-8">Deploy Our Platform</h2>
+            <p class="text-v2v-muted mb-8">Ready to implement intelligent V2V architecture in your smart city infrastructure or data center?</p>
+            <form class="flex flex-col gap-4 max-w-md mx-auto text-left">
+                <input type="text" placeholder="Name" class="bg-v2v-panel border border-white/20 p-3 rounded text-white focus:outline-none focus:border-v2v-accent">
+                <input type="email" placeholder="Email" class="bg-v2v-panel border border-white/20 p-3 rounded text-white focus:outline-none focus:border-v2v-accent">
+                <button type="button" class="mt-4 px-8 py-3 bg-v2v-accent text-v2v-dark font-bold rounded hover:bg-white transition-colors uppercase tracking-wide">
+                    Request Demo
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-[#060a13] py-8 border-t border-white/10 text-center text-sm text-v2v-muted">
+        <p>&copy; 2026 V2V Networks. All Rights Reserved. | Privacy Policy | Terms of Service</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '-50px 0px -50px 0px', // Adjusts when the trigger happens
+                threshold: 0.3 // Triggers when 30% of the section is visible
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Remove active styling from all links
+                        navLinks.forEach(link => {
+                            link.classList.remove('text-v2v-accent', 'border-v2v-accent');
+                            link.classList.add('text-v2v-muted', 'border-transparent');
+                        });
+
+                        // Add active styling to the corresponding link
+                        const activeId = entry.target.getAttribute('id');
+                        const activeLink = document.querySelector(`.nav-link[href="#${activeId}"]`);
+                        
+                        if (activeLink) {
+                            activeLink.classList.remove('text-v2v-muted', 'border-transparent');
+                            activeLink.classList.add('text-v2v-accent', 'border-v2v-accent');
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all sections
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
